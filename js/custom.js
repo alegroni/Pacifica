@@ -46,9 +46,11 @@ jQuery(document).ready(function($) {
 	var swiper = [];
 	$('.swiper').each(function(i,obj){
 		swiper[i] = new Swiper(obj, {
-			loop: false,
-			calculateHeight: true
+			loop: true,
+			calculateHeight: true,
 		});
+
+
 		// Bind navigation arrows
 		$(this).children('.nav-left').on('click', function(e){
 			e.preventDefault();
@@ -60,6 +62,18 @@ jQuery(document).ready(function($) {
 		});
 	});
 
+	var swiperHome = new Swiper ('.swiper-home', {
+		loop:true,
+		autoplay: 6000
+	});
+		$('.swiper-home').on('mouseenter', function(e){
+		    console.log('stop autoplay');
+		    swiperHome.stopAutoplay();
+		  });
+	  $('.swiper-home').on('mouseleave', function(e){
+	    console.log('start autoplay');
+	    swiperHome.startAutoplay();
+				});
 	/* Resize fix for IE11 */
 
 	$(window).on('load', function(){
