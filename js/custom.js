@@ -64,7 +64,7 @@ jQuery(document).ready(function($) {
 
 	var swiperHome = new Swiper ('.swiper-home', {
 		loop:true,
-		autoplay: 6000
+		autoplay: 6000,
 	});
 		$('.swiper-home').on('mouseenter', function(e){
 		    console.log('stop autoplay');
