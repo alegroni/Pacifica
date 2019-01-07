@@ -1159,9 +1159,9 @@ article.personal-profile .inner h4 {
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  /* -webkit-transition: opacity 1.5s linear;
+  -webkit-transition: opacity 1.5s linear;
   transition: opacity 1.5s linear;
-  opacity: 0; */
+  opacity: 0;
 }
 /* #fullscreen-slider .swiper-slide img {opacity:1;} */
 #fullscreen-slider .swiper-slide-active h1 {
