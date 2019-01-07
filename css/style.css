@@ -589,6 +589,7 @@ article.blog .vcard * {
 /*==========================================================*/
 /* Portfolio item
 /*==========================================================*/
+article.portfolio {margin-bottom:30px;}
 article.portfolio .image {
   display: block;
   position: relative;
@@ -716,13 +717,19 @@ article.portfolio h3 {
 @media (max-width: 991px) {
   .portfolio-full {
     overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;    
+    width: 100vw;
+    height:100vh;
+  }
+  .portfolio-full .swiper-slide {
+    width: 100vw;
+    height: 25vh!important;
+    margin-top:30vh;
   }
   .portfolio-full .portfolio-description {
     float: none;
     width: 100%;
-    border:none;
-    border-bottom: 4px solid white;
+    border:none;   
     right:0;
     bottom:inherit;
     background-color: rgba(0, 0, 0, 0.5);
@@ -732,7 +739,42 @@ article.portfolio h3 {
       font-size: 40px;
     }
     .portfolio-full .portfolio-description .icon-text i{
-      width:30px;
+      width:20px;
+      margin-right: 10px;
+      text-align: right;
+  }
+  
+}
+@media (max-width: 991px) and (orientation: landscape) {
+  .portfolio-full .portfolio-description { 
+    bottom:0;
+    left:0;
+    right:inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:0;
+    border-top:2px solid white;   
+    padding: 0px 10px;
+  }
+  .portfolio-full .portfolio-description .icon-text i {
+    width:20px;
+    margin-right:10px;
+    text-align: right;
+  }
+  .portfolio-full .portfolio-description h3 {
+      font-size: 30px;      
+  }
+  .portfolio-full .portfolio-description .icont-text {
+    margin-bottom:0; 
+  }
+  .swiper-wrapper {
+    height:100%!important;
+  }
+  .portfolio-full .swiper-slide {
+    height:75vh!important;
+    background-size:cover;
+    margin-top:0;
   }
 }
 /*==========================================================*/
@@ -1283,7 +1325,7 @@ article.personal-profile .inner h4 {
 /* Icon with text
 /*==========================================================*/
 .icon-text {
-  margin-bottom: 10px !important;
+  /*! margin-bottom: 10px !important; */
 }
 .icon-text:last-child {
   margin-bottom: 0 !important;
