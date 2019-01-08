@@ -46,11 +46,10 @@ jQuery(document).ready(function($) {
 	var swiper = [];
 	$('.swiper').each(function(i,obj){
 		swiper[i] = new Swiper(obj, {
-			loop: true,
-			calculateHeight: true,
+			loop: false,
+			calculateHeight: true
+
 		});
-
-
 		// Bind navigation arrows
 		$(this).children('.nav-left').on('click', function(e){
 			e.preventDefault();
@@ -62,18 +61,6 @@ jQuery(document).ready(function($) {
 		});
 	});
 
-	var swiperHome = new Swiper ('.swiper-home', {
-		loop:true,
-		autoplay: 6000,
-	});
-		$('.swiper-home').on('mouseenter', function(e){
-		    console.log('stop autoplay');
-		    swiperHome.stopAutoplay();
-		  });
-	  $('.swiper-home').on('mouseleave', function(e){
-	    console.log('start autoplay');
-	    swiperHome.startAutoplay();
-				});
 	/* Resize fix for IE11 */
 
 	$(window).on('load', function(){
@@ -85,23 +72,11 @@ jQuery(document).ready(function($) {
 	/* Fullscreen slider */
 
 	var fSwiper = new Swiper('#fullscreen-slider',{
-		onSwiperCreated: function() {
-			// Slide has video
-			if ($('#fullscreen-slider .swiper-slide-active').has('video').length) {
-				$('#fullscreen-slider .swiper-slide-active video').get(0).play();
-			}
-		},
+		loop:true,
+		autoplay:5000,
+
 		onSlideChangeStart: function() {
-			// Stop videos in slider
-			$('#fullscreen-slider .swiper-slide').each(function() {
-				if ($(this).has('video').length) {
-					$(this).children('video').get(0).pause();
-				}
-			});
-			// Has video
-			if ($('#fullscreen-slider .swiper-slide-active').has('video').length) {
-				$('#fullscreen-slider .swiper-slide-active video').get(0).play();
-			}
+		
 			// Hide arrow on first and last slide
 			if (fSwiper.activeIndex == 0) {
 				$('#nav-arrows .nav-left').addClass('hidden');
