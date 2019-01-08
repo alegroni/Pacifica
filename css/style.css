@@ -1666,3 +1666,32 @@ iframe {
 /*==========================================================*/
 
 .image.gallery-grid {padding-bottom:20px;}
+
+/*==========================================================*/
+/* Team
+/*==========================================================*/
+
+ article.team-card .image:before, article.team-card .image:after {
+  content:none;
+ }
+ article.team-card .image:hover {
+   cursor:inherit;
+ }
+ article.team-card:first-of-type > div{height:410px;}
+ article.team-card:first-of-type .inner header {margin-bottom: 10px!important;}
+  article.team-card:first-of-type .inner {padding:20px 40px;}
+
+ article.team-card .inner h3 {text-transform: uppercase;font-size: 22px;font-weight: 700;}
+
+ article.portfolio .inner {
+   padding:20px;
+ }
+
+ @media (max-width:1024px) {
+   article.team-card {margin-bottom:0;}
+   article.team-card .inner h3 {font-size: 20px;}
+   article.team-card:first-of-type > div {height:290px;}
+   article.team-card:first-of-type .image {background-position: center;}
+    article.team-card:first-of-type .inner {padding:20px;}
+   article.team-card:first-of-type .inner p {line-height: 1.4;}
+ }
