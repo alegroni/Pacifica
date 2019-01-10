@@ -6,10 +6,10 @@ jQuery(document).ready(function($) {
 /* Preloader
 /*==========================================================*/
 
-	$(window).on('load', function(){
-		$('#status').fadeOut();
-		$('#preloader').delay(350).fadeOut('slow');
-	});
+	// $(window).on('load', function(){
+	// 	$('#status').fadeOut();
+	// 	$('#preloader').delay(350).fadeOut('slow');
+	// });
 
 /*==========================================================*/
 /* Collapsible sidebar
@@ -76,7 +76,7 @@ jQuery(document).ready(function($) {
 		autoplay:5000,
 
 		onSlideChangeStart: function() {
-		
+
 			// Hide arrow on first and last slide
 			if (fSwiper.activeIndex == 0) {
 				$('#nav-arrows .nav-left').addClass('hidden');
