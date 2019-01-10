@@ -122,6 +122,12 @@ jQuery(document).ready(function($) {
 	}
 	resizeToCover();
 
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	 $("#wave").attr('poster', 'img/poster_waves.jpg');
+		$("#casa").attr('poster', 'img/poster_casa.jpg');
+	};
+
+
 /*==========================================================*/
 /* On resize
 /*==========================================================*/
