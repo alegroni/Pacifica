@@ -20,21 +20,14 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link href="http://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Oswald:400" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
+		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Oswald:400" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/idangerous.swiper.css">
 		<link rel="stylesheet" href="css/style.css">
-		<style>
-			.swiper-container {height:100vh}
-		</style>
 
 	</head>
 
 	<body>
 
-		<!-- Preloader -->
-		<div id="preloader">
-			<div id="status"></div>
-		</div>
 
 		<!-- Overlay -->
 		<div id="overlay"></div>
@@ -66,46 +59,30 @@
 			<!-- Content -->
 			<div id="content">
 
-				<!-- Fullscreen slider -->
-				<div id="fullscreen-slider" class="swiper-container swiper-home" >
-					<div class="swiper-wrapper">
-						<!-- Slide -->
-						<div class="swiper-slide overlay overlay-grid-2" >
-							<video  src="img/slide-1.mp4" width="853" height="480" autoplay loop>
-								<!-- <source  type="video/mp4"> -->
-							</video>
-							<h1><img src="./img/logo-w.png" alt=""></h1>
-						</div>
-						<!-- Slide -->
-						<div class="swiper-slide overlay " style="background-image: url('img/slide-2.jpg')">
-							<!-- <h1>Less is more, more or less</h1> -->
-						</div>
-						<!-- Slide -->
-						<div class="swiper-slide overlay " style="background-image: url('img/slide-3.jpg')">
-							<!-- <h1>Robust, clean, comfortable</h1> -->
-						</div>
-						<!-- Slide -->
-						<div class="swiper-slide overlay " style="background-image: url('img/slide-4.jpg')">
-							<!-- <h1>Showcase your work with Rayleigh</h1> -->
-						</div>
-						<!-- Slide -->
-						<div class="swiper-slide overlay " style="background-image: url('img/slide-5.jpg')">
-							<!-- <h1>Showcase your work with Rayleigh</h1> -->
-						</div>
-						<!-- Slide -->
-						<div class="swiper-slide overlay overlay-grid-2">
-							<video src="img/slide-6.mp4" width="853" height="480" autoplay loop >
-								<!-- <source  type="video/mp4"> -->
-							</video>
-							<h1>CASA CINCO FUEGOS</h1>
-						</div>
-
-					</div>
-
-					<div class="swiper-pagination"></div>
+				<div class="snap">
+					
+					<video class="overlay overlay-grid-2" id="wave" width="853" height="480" playsinline autobuffer autoplay loop>
+						<source  src="img/slide_1.ogg" type="video/ogg" >
+						<source  src="img/slide_1.mp4" type="video/mp4" >
+						<source  src="img/slide_1.webm" type="video/webm" >
+					</video>
+					<!-- <h1><img src="./img/logo-w.png" alt=""></h1> -->
+				
+					<img src="img/slide_2.jpg" alt="">
+					<img src="img/slide_3.jpg" alt="">
+					<img src="img/slide_4.jpg" alt="">
+					<img src="img/slide_5.jpg" alt="">
+					
+					<video id="casa" width="853" height="480" playsinline autobuffer autoplay loop>
+						<source  src="img/slide_6.ogg" type="video/ogg" >
+						<source  src="img/slide_6.mp4" type="video/mp4" >
+						<source  src="img/slide_6.webm" type="video/webm" >
+					</video>
+					<!-- <h1>CASA CINCO FUEGOS</h1> -->
+					
 
 				</div>
-
+				
 			</div>
 
 			<!-- Collapsible sidebar -->
@@ -119,12 +96,13 @@
 						<ul>
 							<li><a href="portfolio.html">Casas</a></li>
 							<li><a href="lifestyle.html">Lifestyle</a></li>
-							<li><a href="#">Desarollos</a></li>
+							<li><a href="desarrollos.html">Desarrollos</a></li>
 							<li><a href="#">El Estudio</a>	<ul>
 									<li><a href="quienesomos.html">Quienes Somos</a></li>
 									<li><a href="estudio.html">Fotos</a></li>
 								</ul>
 							</li>
+							<li><a href="#">Diseño de Interiores</a></li>
 							<li><a href="#">Contacto</a></li>
 							<li><a href="#">Instagram</a></li>
 
@@ -145,37 +123,10 @@
 		<!-- JavaScripts -->
 		<script type='text/javascript' src='js/jquery.min.js'></script>
 		<script type='text/javascript' src='js/bootstrap.min.js'></script>
-		<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+		<script type='text/javascript' src="./js/swiper/idangerous.swiper.min.js"></script>
 		<script type='text/javascript' src='js/masonry/masonry.pkgd.min.js'></script>
 		<script type='text/javascript' src='js/isotope/jquery.isotope.min.js'></script>
 		<script type='text/javascript' src='js/custom.js'></script>
-		<script type="text/javascript">
-  var mySwiper = new Swiper ('.swiper-home', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-				autoplay: {
-        delay: 4000,
-        disableOnInteraction: true,
-      },
-
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
-  </script>
 
 
 	</body>

@@ -121,6 +121,27 @@ jQuery(document).ready(function($) {
 		});
 	}
 	resizeToCover();
+	function resizeToCover() {
+		$('.snap').each(function() {
+			if ($(this).has('video').length) {
+				var vid_w_orig = parseInt($(this).find('video').attr('width'));
+				var vid_h_orig = parseInt($(this).find('video').attr('height'));
+				var container_w = $(this).width();
+				var container_h = $(this).height();
+				// Use largest scale factor of horizontal / vertical
+				var scale_h =  container_w / vid_w_orig;
+				var scale_v =  container_h / vid_h_orig;
+				var scale = scale_h > scale_v ? scale_h : scale_v;
+				// Scale the video
+				$(this).find('video').width(scale * vid_w_orig);
+				$(this).find('video').height(scale * vid_h_orig);
+				// Center the video
+				$(this).find('video').css('left', ((container_w - scale * vid_w_orig) / 2));
+				$(this).find('video').css('top', ((container_h - scale * vid_h_orig) / 2));
+			}
+		});
+	}
+	resizeToCover();
 
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	 $("#wave").attr('poster', 'img/poster_waves.jpg');

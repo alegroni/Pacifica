@@ -1172,6 +1172,31 @@ article.personal-profile .inner h4 {
     line-height: inherit;
   }
 }
+
+/*==========================================================*/
+/* Snap Scroll
+/*==========================================================*/
+
+.snap {
+  display: flex;
+  width:100%;
+  height:100vh;
+  scroll-snap-type: mandatory;
+  scroll-snap-type: x;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  }
+  .snap img, .snap video {
+    flex: 0 0 100%;
+    width:100%;
+    object-fit: cover;
+    scroll-snap-align:center;
+    scroll-snap-stop:always;
+
+  }
+
+
+
 /*==========================================================*/
 /* Tabs
 /*==========================================================*/
