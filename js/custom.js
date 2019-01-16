@@ -121,7 +121,7 @@ jQuery(document).ready(function($) {
 		});
 	}
 	resizeToCover();
-	function resizeToCover() {
+	function resizeToCoverSnap() {
 		$('.snap').each(function() {
 			if ($(this).has('video').length) {
 				var vid_w_orig = parseInt($(this).find('video').attr('width'));
@@ -141,7 +141,7 @@ jQuery(document).ready(function($) {
 			}
 		});
 	}
-	resizeToCover();
+	resizeToCoverSnap();
 
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	 $("#wave").attr('poster', 'img/poster_waves.jpg');
