@@ -83,11 +83,11 @@ jQuery(document).ready(function($) {
 			} else {
 				$('#nav-arrows .nav-left').removeClass('hidden');
 			}
-			if (fSwiper.activeIndex == (fSwiper.slides.length - 1)) {
-				$('#nav-arrows .nav-right').addClass('hidden');
-			} else {
-				$('#nav-arrows .nav-right').removeClass('hidden');
-			}
+			// if (fSwiper.activeIndex == (fSwiper.slides.length - 1)) {
+			// 	$('#nav-arrows .nav-right').addClass('hidden');
+			// } else {
+			// 	$('#nav-arrows .nav-right').removeClass('hidden');
+			// }
 		}
 	});
 	// Bind external navigation arrows for fullscreen slider
