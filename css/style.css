@@ -946,10 +946,12 @@ article.personal-profile .image .icons a {
 article.personal-profile .image .icons a:hover {
   opacity: 1;
 }
-article.personal-profile .inner {
+article.personal-profile .inner, article.portfolio-todos .inner {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
+article.portfolio-todos .inner header {text-align: left;}
+article.portfolio-todos .inner p {text-align: left;}
 article.personal-profile .inner h4 {
   font-size: 16px;
   opacity: 0.5;
@@ -966,6 +968,12 @@ article.portfolio-todos .image {padding-top: 33%;}
   article.personal-profile .image {
     float: none;
     padding-top: 100%;
+  }
+  article.portfolio-todos .image {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
   }
 }
 /*==========================================================*/
