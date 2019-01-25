@@ -29,6 +29,7 @@ hr {
   border-color: #f0f0f0;
   margin: 30px 0;
 }
+
 /*==========================================================*/
 /* Preloader
 /*==========================================================*/
@@ -578,7 +579,7 @@ background-image: linear-gradient(315deg, #36669d 0%, #d3d3d3 74%);
 /*==========================================================*/
 article .image {
   width: 100%;
-  padding-top: 75%;
+  padding-top: 55%;
   background-size: cover;
   background-position: center center;
 }
@@ -650,7 +651,7 @@ article.portfolio .inner {
   padding: 20px 40px;
 }
 article.portfolio h3 {
-  font-size: 34px;
+  font-size: 30px;
 }
 @media (max-width: 991px) {
   article.portfolio .inner {
@@ -732,9 +733,9 @@ article.portfolio .fadeIn-right{
 
 @media screen and (max-width:1000px) {
   article.portfolio .content-overlay {opacity:1;height:30%;top:inherit;}
-  article.portfolio .content-details {top:inherit;bottom:10px;opacity: 1;padding:0 1em;}
+  article.portfolio .content-details {top:inherit;bottom:1%;opacity: 1;padding:0 1em;}
   article.portfolio .fadeIn-right {left:50%;}
-  article.portfolio .content-details h3 {max-width: none;font-size: 24px;}
+  article.portfolio .content-details h3 {max-width: none;font-size: 20px;padding-right: 5px;}
 }
 
 /*==========================================================*/
@@ -750,12 +751,13 @@ article.portfolio .fadeIn-right{
   padding-top: 100px;
   background: #ffffff;
   z-index: 9999;
+
 }
 .portfolio-full .portfolio-description {
   /* float: left; */
   /* width: 500px; */
   /* max-height: 100%; */
-  padding: 40px;
+  padding: 2rem 3rem 2rem 0;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   position: absolute;
@@ -763,19 +765,22 @@ article.portfolio .fadeIn-right{
   bottom:5vh;
   margin:auto;
   z-index: 10000;
-  background-color: rgba(0, 0, 0, 0.75);
-  border: 4px solid white;
-
+  background-color: rgba(0, 0, 0, 0.85);
+  border-right: 4px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .portfolio-full .portfolio-description > * {
   color:white!important;
 }
 .portfolio-full .portfolio-description h3 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  font-size: 48px;
+  font-weight: 600;
+  font-size: 42px;
   text-transform: uppercase;
-
+  max-width: min-content;
+  text-align: right;
+  line-height: 1.3;
 }
 .portfolio-full .portfolio-description > *:last-child {
   margin-bottom: 0;
@@ -834,7 +839,6 @@ article.portfolio .fadeIn-right{
     border:none;
     right:0;
     bottom:inherit;
-    background-color: rgba(0, 0, 0, 0.5);
     padding:20px 20px 20px 30px;
     }
     .portfolio-full .portfolio-description h3 {
@@ -850,22 +854,21 @@ article.portfolio .fadeIn-right{
 @media (max-width: 991px) and (orientation: landscape) {
   .portfolio-full .portfolio-description {
     bottom:0;
-    left:0;
-    right:inherit;
-    display: flex;
-    align-items: center;
+    right:0;
+    align-items: flex-start;
     justify-content: space-between;
-    border-bottom:0;
-    border-top:2px solid white;
-    padding: 0px 10px;
+    border-left:3px solid white;
+    padding: 0.5rem 2rem;
+    width:auto;
   }
   .portfolio-full .portfolio-description .icon-text i {
     width:20px;
     margin-right:10px;
-    text-align: right;
+    text-align: left;
   }
   .portfolio-full .portfolio-description h3 {
-      font-size: 30px;
+    font-size: 28px;
+    text-align: left;
   }
   .portfolio-full .portfolio-description .icont-text {
     margin-bottom:0;
@@ -877,6 +880,12 @@ article.portfolio .fadeIn-right{
     height:75vh!important;
     background-size:cover;
     margin-top:0;
+  }
+  article.portfolio .content-overlay {
+    height:25%;
+  }
+  article.portfolio .content-details {
+    bottom:5%;
   }
 }
 /*==========================================================*/
@@ -1885,20 +1894,37 @@ article.team-card .image {background-position: top center;}
    background: #151414;
    position: relative;
  }
+ .footer-section .container {
+   padding:20px;
+ }
  .footer-cta {
    border-bottom: 1px solid #373636;
-   padding-bottom:5px;
-   margin-bottom:30px;
+   padding-bottom:10px;
+   margin-bottom:20px;
  }
  .single-cta, .footer-widget {
    padding:0 10px;
+   margin-bottom:15px;
  }
+ .single-cta {
+  display: flex;
+  align-items: center;
+  align-content: center;
+ }
+
  .single-cta i {
-   color: #444;
-   font-size: 30px;
+   color:#5a5858;
+   font-size: 20px;
    float: left;
-   margin-top: 8px;
-   margin-right: 12px;
+   /* margin-top: 8px; */
+   /* margin-right: 12px; */
+ }
+  .ig {
+   padding-left: 0;
+
+ }
+ .ig i {
+   font-size:24px;
  }
  .cta-text {
    padding-left: 15px;
@@ -1912,7 +1938,7 @@ article.team-card .image {background-position: top center;}
  }
  .cta-text span {
    color: #757575;
-   font-size: 15px;
+   font-size: 14px;
  }
  .footer-content {
    position: relative;
@@ -1961,9 +1987,10 @@ article.team-card .image {background-position: top center;}
 
  .footer-widget-heading h3 {
    color: #fff;
-   font-size: 20px;
-   font-weight: 600;
-   margin-bottom: 40px;
+   font-size: 18px;
+   /* font-weight: 600; */
+   margin-bottom: 30px;
+   margin-top:10px;
    position: relative;
  }
  .footer-widget-heading h3::before {
@@ -1979,7 +2006,7 @@ article.team-card .image {background-position: top center;}
    display: inline-block;
    float: left;
    width: 50%;
-   margin-bottom: 12px;
+   margin-bottom: 6px;
  }
  .footer-widget ul li a:hover{
    color: #444;
@@ -1987,6 +2014,8 @@ article.team-card .image {background-position: top center;}
  .footer-widget ul li a {
    color: #878787;
    text-transform: capitalize;
+   padding:5px;
+   font-size: 15px;
  }
  .subscribe-form {
    position: relative;
@@ -2039,9 +2068,8 @@ article.team-card .image {background-position: top center;}
    color: #878787;
  }
 @media screen and (max-width:768px) {
-  .cta-text{margin-bottom: 10px;}
   .cta-text h4 {font-size: 18px;margin-bottom: 0;}
   .single-cta i {width:25px;}
-  .container-copy{padding:0 20px;}
+  .footer-section .container-copy{padding:0 20px;}
   .footer-menu li {margin-left:0; padding:0 5px;}
 }
