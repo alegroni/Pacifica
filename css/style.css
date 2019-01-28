@@ -738,6 +738,12 @@ article.portfolio .fadeIn-right{
   article.portfolio .content-details h3 {max-width: none;font-size: 20px;padding-right: 5px;}
 }
 
+@media screen and (max-width:600px) {
+  article.portfolio .content-details h3 {font-size: 16px;}
+  article.portfolio .content-details {bottom:0;}
+  article.portfolio .content-overlay {height:20%}
+}
+
 /*==========================================================*/
 /* Portfolio full
 /*==========================================================*/
@@ -757,7 +763,7 @@ article.portfolio .fadeIn-right{
   /* float: left; */
   /* width: 500px; */
   /* max-height: 100%; */
-  padding: 2rem 3rem 2rem 0;
+  padding: 2rem 3rem;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   position: absolute;
@@ -776,9 +782,8 @@ article.portfolio .fadeIn-right{
 }
 .portfolio-full .portfolio-description h3 {
   font-weight: 600;
-  font-size: 42px;
+  font-size: 30px;
   text-transform: uppercase;
-  max-width: min-content;
   text-align: right;
   line-height: 1.3;
 }
@@ -821,7 +826,7 @@ article.portfolio .fadeIn-right{
   transition: transform 0.4s ease-in-out;
 }
 /* Responsive */
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .portfolio-full {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -832,17 +837,18 @@ article.portfolio .fadeIn-right{
     width: 100vw;
     height: 25vh!important;
     margin-top:30vh;
+    background-position: top;
   }
   .portfolio-full .portfolio-description {
     float: none;
     width: 100%;
     border:none;
     right:0;
-    bottom:inherit;
+    bottom:25vh;
     padding:20px 20px 20px 30px;
     }
     .portfolio-full .portfolio-description h3 {
-      font-size: 40px;
+      font-size: 30px;
     }
     .portfolio-full .portfolio-description .icon-text i{
       width:20px;
@@ -886,6 +892,17 @@ article.portfolio .fadeIn-right{
   }
   article.portfolio .content-details {
     bottom:5%;
+  }
+}
+@media screen and (max-width:480px) {
+  .portfolio-full .portfolio-description h3 {
+    font-size: 20px;
+  }
+  .portfolio-full .portfolio-description>*:last-child {
+    font-size: 12px;
+  }
+  .portfolio-full .portfolio-description {
+    bottom:15vh;
   }
 }
 /*==========================================================*/
@@ -967,7 +984,7 @@ article.personal-profile .inner h4 {
   margin-top: 10px;
 }
 
-article.portfolio-todos .image {padding-top: 33%;}
+
 /* Responsive */
 @media (max-width: 991px) {
   article.personal-profile > div {
@@ -1860,7 +1877,10 @@ iframe {
 /* Team
 /*==========================================================*/
 
-article.team-card .image {background-position: top center;}
+article.team-card .image {background-position: top center;padding-top:100%;}
+article.portfolio-todos .image {
+  padding-top: 33%;
+}
  article.team-card .image:before, article.team-card .image:after {
   content:none;
  }
@@ -1880,10 +1900,18 @@ article.team-card .image {background-position: top center;}
  @media (max-width:1024px) {
    article.team-card {margin-bottom:0;}
    article.team-card .inner h3 {font-size: 20px;}
-   article.team-card:first-of-type > div {height:290px;}
+   /* article.team-card:first-of-type > div {height:290px;} */
    article.team-card:first-of-type .image {background-position: center;}
     article.team-card:first-of-type .inner {padding:20px;}
    article.team-card:first-of-type .inner p {line-height: 1.4;}
+ }
+
+ @media screen and (max-width:480px){
+    article.team-card:first-of-type .image {
+      background-position: center;
+      padding-top:33%;
+    }
+   article.team-card .image {padding-top:75%;}
  }
 
 
@@ -1897,10 +1925,12 @@ article.team-card .image {background-position: top center;}
  .footer-section .container {
    padding:20px;
  }
- .footer-cta {
-   border-bottom: 1px solid #373636;
-   padding-bottom:10px;
-   margin-bottom:20px;
+ .sub-footer{
+   border-top: 1px solid #373636;
+   padding-top:10px;
+   margin-top:20px;
+   display: flex;
+   justify-content: space-between;
  }
  .single-cta, .footer-widget {
    padding:0 10px;
