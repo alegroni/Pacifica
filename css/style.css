@@ -2170,7 +2170,7 @@ iframe {
 /*==========================================================*/
 /* Gallery Grid
 /*==========================================================*/
-.grid-gallery {
+.grid-2gallery {
   display: -ms-flexbox;
   /* IE10 */
   display: flex;
@@ -2188,7 +2188,7 @@ iframe {
   padding: 0 16px;
 }
 
-.col-gallery figure {
+.grid-gallery figure {
   margin-bottom: 32px;
   vertical-align: middle;
 }

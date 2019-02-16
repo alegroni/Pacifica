@@ -275,17 +275,17 @@ jQuery(document).ready(function($) {
 /* Portfolio Item
 /*==========================================================*/
 
-	$('article.portfolio a').click(function() {
-		var itemID = $(this).attr('href');
-		$('#top').addClass('portfolio-open');
-		$(itemID).addClass('portfolio-open');
-		return false;
-	});
-	$('#portfolio-close').click(function() {
-		$('.portfolio-full').removeClass('portfolio-open');
-		$('#top').removeClass('portfolio-open');
-		return false;
-	});
+	// $('article.portfolio a').click(function() {
+	// 	var itemID = $(this).attr('href');
+	// 	$('#top').addClass('portfolio-open');
+	// 	$(itemID).addClass('portfolio-open');
+	// 	return false;
+	// });
+	// $('#portfolio-close').click(function() {
+	// 	$('.portfolio-full').removeClass('portfolio-open');
+	// 	$('#top').removeClass('portfolio-open');
+	// 	return false;
+	// });
 
 /*==========================================================*/
 /* AJAX Contact form
