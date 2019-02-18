@@ -212,3 +212,4 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 
 // execute above function
 initPhotoSwipeFromDOM('.grid-gallery');
+initPhotoSwipeFromDOM('.normal-gallery');

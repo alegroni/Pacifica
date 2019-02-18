@@ -69,7 +69,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 180%;
-  background: #000000;
+  background:transparent;
+  overflow: hidden;
 }
 
 h1,
@@ -327,6 +328,9 @@ address {
   z-index: 0;
   position: relative;
   overflow: hidden;
+  overflow-y: scroll;
+  background-color: #36669d;
+  background-image: linear-gradient(315deg, #36669d 0%, #d3d3d3 74%);
 }
 
 
@@ -338,18 +342,16 @@ address {
   position: relative;
   left: 0;
   z-index: 9999;
-  height: 100%;
+  /* height: 100%; */
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-
   background-color: #e1e1e1;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   background-color: #36669d;
   background-image: linear-gradient(315deg, #36669d 0%, #d3d3d3 74%);
-  ;
-  overflow: auto;
+  overflow: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -359,17 +361,17 @@ address {
   transform: translate(300px, 0);
 }
 
-#content::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.27);
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px transparent;
   background-color: transparent;
 }
 
-#content::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 6px;
   background-color: transparent;
 }
 
-#content::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: #4b6077;
 }
 
@@ -422,7 +424,7 @@ address {
 /*==========================================================*/
 #sidebar {
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   visibility: hidden;
   width: 300px;
@@ -434,7 +436,7 @@ address {
   opacity: 1;
   -webkit-transform: translate3d(0, -100%, 0);
   transform: translate3d(0, -100%, 0);
-  padding-top: 160px;
+  padding-top: 80px;
 }
 
 .sidebar-open #sidebar {
@@ -447,6 +449,7 @@ address {
   transform: translate3d(0, 0, 0);
   -webkit-transition-speed: 0.2s;
   transition-speed: 0.2s;
+  top:100px;
 }
 
 #sidebar:after {
@@ -594,14 +597,12 @@ address {
 /* Page heading
 /*==========================================================*/
 #heading {
-  margin-top: -20px;
   margin-bottom: 60px;
   text-transform: uppercase;
+  max-width: 100%;
+  padding-left:10px;
 }
 
-#heading header {
-  margin-bottom: 0;
-}
 
 #heading h1 {
   font-size: 48px;
@@ -638,11 +639,28 @@ address {
 #heading h2 span:last-child:after {
   content: '';
 }
+#heading .icon-text {
+  display: flex;
+  justify-content: flex-start;
+  color:#202020;
+  opacity: 0.5;
+}
+#heading .icon-text:before{
+  content:'//';
+}
+
+#heading .icon-text i {
+  float: none;
+  width: auto;
+  margin: 0 10px;
+}
+
 
 /* Responsive */
 @media (max-width: 991px) {
   #heading {
-    margin-top: 20px;
+    margin-top: 0;
+    margin-bottom:20px;
   }
 
   #heading>div {
@@ -653,6 +671,7 @@ address {
   #heading h1 {
     display: block;
     font-size: 32px;
+    text-align: center;
   }
 
   #heading h2 {
@@ -663,6 +682,18 @@ address {
 
   #heading h2:before {
     content: '';
+  }
+  #heading .icon-text p {
+    text-align: left;
+  }
+  #heading .icon-text {
+    justify-content: center
+  }
+}
+@media screen and (max-width:500px) {
+ 
+  #heading .icon-text {
+    justify-content: flex-start
   }
 }
 
@@ -1870,6 +1901,60 @@ iframe {
 .masonry>article {
   margin-top: 40px;
 }
+/* ---- grid ---- */
+
+.grid {
+  max-width: 1200px;
+  counter-reset: grid-item;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */ 
+.grid-item {
+  width: 160px;
+  height: 120px;
+  float: left;  
+}
+
+.grid-item--width2 {
+  width: 320px;
+}
+
+.grid-item--width3 {
+  width: 480px;
+}
+
+.grid-item--width4 {
+  width: 720px;
+}
+
+.grid-item--height2 {
+  height: 200px;
+}
+
+.grid-item--height3 {
+  height: 260px;
+}
+
+.grid-item--height4 {
+  height: 360px;
+}
+
+.grid-item:before {
+  counter-increment: grid-item;
+  content: counter(grid-item);
+  display: block;
+  color: white;
+  padding-top: 0.2em;
+  text-align: center;
+  font-size: 20px;
+}
 
 /* Responsive */
 @media (max-width: 991px) {
@@ -1877,6 +1962,7 @@ iframe {
     width: 100%;
   }
 }
+
 
 /*==========================================================*/
 /* Isotope
@@ -2038,6 +2124,7 @@ iframe {
   margin-right: auto;
   margin-left: auto;
   padding: 40px 20px;
+  overflow: hidden;
 }
 
 .row {
@@ -2095,7 +2182,7 @@ iframe {
   /* Spacing */
   .container-fluid,
   .container {
-    padding: 80px;
+    padding: 80px 20px;
   }
 
   .inner .row:last-child>div>*:last-child {
@@ -2167,10 +2254,16 @@ iframe {
   }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    padding: 80px;
+  }
+}
+
 /*==========================================================*/
 /* Gallery Grid
 /*==========================================================*/
-.grid-2gallery {
+.grid-gallery {
   display: -ms-flexbox;
   /* IE10 */
   display: flex;
@@ -2178,44 +2271,56 @@ iframe {
   /* IE10 */
   flex-wrap: wrap;
   padding: 0 4px;
+  flex-direction: column;
+  align-items: flex-start;
+  max-height: 1000px;
+  justify-content: flex-start;
+  align-content: flex-start;
+  overflow-x:scroll;
 }
 
-.col-gallery {
+
+.grid-gallery-item,
+.grid-gallery-item-3 {
+  margin-bottom: 16px;
   -ms-flex: 33%;
   /* IE10 */
-  flex: 33%;
-  max-width: 33%;
-  padding: 0 16px;
+  /* flex: 33%; */
+  max-width: 250px;
+  padding: 0 8px;
+  /* min-height:250px; */
 }
-
-.grid-gallery figure {
-  margin-bottom: 32px;
-  vertical-align: middle;
+.grid-gallery-item-3 {
+  max-width: 300px;
+}
+.normal-gallery figure {
+  margin-bottom:16px;
+}
+#heading .icon-text i {
+  float: none;
+  width: auto;
+  margin-right: 10px;
 }
 
 @media screen and (max-width:768px) {
-  .col-gallery {
-    padding: 0 6px;
+  .grid-gallery {
+    align-content: flex-start;
   }
-
-  .col-gallery figure {
-    margin-bottom: 12px;
+  #heading .icon-text {
+    display: flex;
+    justify-content: center
   }
+ 
 }
 
-@media screen and (max-width:600px) {
-  .col-gallery {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
 
-  .col-gallery {
-    padding: 0 6px;
-  }
 
-  .col-gallery figure {
-    margin-bottom: 12px;
+@media screen and (max-width:500px){
+  .grid-gallery {
+    max-height: inherit;
+  }
+  #heading .icon-text {
+    justify-content: flex-start
   }
 }
 
