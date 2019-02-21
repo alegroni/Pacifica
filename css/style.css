@@ -2326,12 +2326,29 @@ iframe {
 
 
 @media screen and (max-width:500px) {
+
+  .grid-gallery {
+    align-content: center;
+  }
+
+  .grid-gallery-item {
+    max-width: 300px;
+  }
+
+  .grid-gallery-item img {
+    width: 300px;
+  }
+
   .grid-gallery {
     max-height: inherit;
   }
 
   #heading .icon-text {
     justify-content: flex-start
+  }
+
+  #heading h1 {
+    text-align: left;
   }
 }
 
