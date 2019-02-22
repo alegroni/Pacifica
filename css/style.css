@@ -368,6 +368,7 @@ address {
 
 ::-webkit-scrollbar {
   width: 6px;
+  height:8px;
   background-color: transparent;
 }
 
@@ -2289,12 +2290,12 @@ iframe {
 .grid-gallery-item,
 .grid-gallery-item-3 {
   margin-bottom: 16px;
-  -ms-flex: 33%;
-  /* IE10 */
-  /* flex: 33%; */
-  max-width: 250px;
+  width: 340px;
   padding: 0 8px;
-  /* min-height:250px; */
+}
+
+.grid-gallery-item img {
+  width:340px;
 }
 
 .grid-gallery-item-3 {
@@ -2362,8 +2363,9 @@ article.team-card .image {
   padding-top: 100%;
 }
 
-article.team-card .worker {
+article.team-card .leader {
   background-size: 140%;
+  background-position-y: 20%;
 }
 
 article.portfolio-todos .image {
