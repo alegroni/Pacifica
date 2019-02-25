@@ -24,16 +24,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
-     id="namedview9"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     id="namedview3796"
      showgrid="false"
-     inkscape:zoom="10.214286"
-     inkscape:cx="14"
-     inkscape:cy="10.5"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:zoom="14.445181"
+     inkscape:cx="0.67042796"
+     inkscape:cy="9.5498173"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg3012" />
   <defs
      id="defs3014" />
@@ -45,33 +45,34 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      transform="translate(0,-1031.3622)"
-     id="layer1">
+     id="layer1"
+     style="fill:#ffffff">
     <rect
        width="28"
        height="1"
        x="0"
        y="1051.3622"
        id="rect3079"
-       style="fill:#202020;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none" />
     <rect
        width="28"
        height="1"
        x="0"
        y="1031.3622"
        id="rect3079-4"
-       style="fill:#202020;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none" />
     <rect
        width="28"
        height="1"
        x="0"
        y="1041.3622"
        id="rect3079-4-0"
-       style="fill:#202020;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none" />
   </g>
 </svg>
