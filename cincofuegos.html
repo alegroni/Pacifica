@@ -29,14 +29,15 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- CSS -->
+    <!-- VENDORS -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Oswald:400" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" href="css/idangerous.swiper.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css">
+    <link rel="stylesheet" href="css/justifiedGallery.min.css">
+    <link rel="stylesheet" href="css/colorbox.css">
+    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -51,9 +52,9 @@
 
         <!-- Logo -->
         <header id="logo">
-            <a href="index.html"><img src="img/logo.png" alt="" /></a>
-            <!-- <h1>Pacifica</h1>
-				<h2>Ezequiel Gil <strong>Arquitecto</strong></h2> -->
+            <a href="index.html">
+                <h1>Pacífica</h1>
+            </a>
         </header>
 
         <!-- Portfolio close button -->
@@ -92,114 +93,80 @@
     <!-- Main wrapper -->
     <div id="main-wrapper">
         <!-- Content -->
-        <div id="content" >
-            <!-- Fluid container -->
-            <div class="container">
-                <!-- Page heading -->
-                <header id="heading">
-                    <h1>Cinco Fuegos</h1>
-                    <div class="icon-text">
-                        <i class="fa fa-map-marker"></i>
-                        <p>Buenos Aires - 300 M2</p>
-                    </div>
-                </header>
-
-                <!-- Main content -->
-                <div class="grid-gallery" itemscope>
-
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_01.jpg" data-size="800x800">
-                            <img src="./img/casas/cincofuegos_01_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_07_copia.jpg" data-size="1280x720">
-                            <img src="./img/casas/cincofuegos_07_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_13.jpg" data-size="800x800">
-                            <img src="./img/casas/cincofuegos_13_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_08.jpg" data-size="800x450">
-                            <img src="./img/casas/cincofuegos_08_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_14.jpg" data-size="800x450">
-                            <img src="./img/casas/cincofuegos_14_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_12.jpg" data-size="800x800">
-                            <img src="./img/casas/cincofuegos_12_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_09.jpg" data-size="800x450">
-                            <img src="./img/casas/cincofuegos_09_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_15.jpg" data-size="800x450">
-                            <img src="./img/casas/cincofuegos_15_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_10.jpg" data-size="800x800">
-                            <img src="./img/casas/cincofuegos_10_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_03.jpg" data-size="800x450">
-                            <img src="./img/casas/cincofuegos_03_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_16.jpg" data-size="800x450">
-                            <img src="./img/casas/cincofuegos_16_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_04.jpg" data-size="800x800">
-                            <img src="./img/casas/cincofuegos_04_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_11.jpg" data-size="800x800">
-                            <img src="./img/casas/cincofuegos_11_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_17.jpg" data-size="800x1000">
-                            <img src="./img/casas/cincofuegos_17_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_05.jpg" data-size="800x450">
-                            <img src="./img/casas/cincofuegos_05_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_06.jpg" data-size="800x1000">
-                            <img src="./img/casas/cincofuegos_06_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_02.jpg" data-size="800x800">
-                            <img src="./img/casas/cincofuegos_02_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/casas/cincofuegos_18.jpg" data-size="800x800">
-                            <img src="./img/casas/cincofuegos_18_m.jpg" itempropo alt="">
-                        </a>
-                    </figure>
+        <!-- Fluid container -->
+        <div class="container">
+            <!-- Page heading -->
+            <header id="heading">
+                <h1>Cinco Fuegos</h1>
+                <div class="icon-text">
+                    <i class="fa fa-map-marker"></i>
+                    <p>Buenos Aires - 300 M2</p>
                 </div>
+            </header>
+
+            <!-- Main content -->
+
+            <div class="myExMul">
+                <a href="./img/casas/cincofuegos_07.jpg" rel="myExMul-1" style="display">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_07_m.jpg" />
+                </a>
+                <a href="./img/casas/cincofuegos_01.jpg" rel="myExMul-1">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_01_m.jpg" />
+                </a>
+                <a href="./img/casas/cincofuegos_02.jpg" rel="myExMul-1">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_02_m.jpg" />
+                </a>
+                <a href="./img/casas/cincofuegos_03.jpg" rel="myExMul-1">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_03_m.jpg" />
+                </a>
+                <a href="./img/casas/cincofuegos_04.jpg" rel="myExMul-1">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_04_m.jpg" />
+                </a>
+                <a href="./img/casas/cincofuegos_05.jpg" rel="myExMul-1">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_05_m.jpg" />
+                </a>
+               
+                <a href="./img/casas/cincofuegos_08.jpg" rel="myExMul-1">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_08_m.jpg" />
+                </a>
+<a href="./img/casas/cincofuegos_06.jpg" rel="myExMul-1">
+    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_06_m.jpg" />
+</a>
+                <a href="./img/casas/cincofuegos_09.jpg" rel="myExMul-1">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_09_m.jpg" />
+                </a>
+                <a href="./img/casas/cincofuegos_10.jpg" rel="myExMul-1">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_10_m.jpg" />
+                </a>
+                <a href="./img/casas/cincofuegos_11.jpg" rel="myExMul-1">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_11_m.jpg" />
+                </a>
+                <a href="./img/casas/cincofuegos_12.jpg" rel="myExMul-1">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_12_m.jpg" />
+                </a>
+                <a href="./img/casas/cincofuegos_13.jpg" rel="myExMul-1">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_13_m.jpg" />
+                </a>
+                <a href="./img/casas/cincofuegos_14.jpg" rel="myExMul-1">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_14_m.jpg" />
+                </a>
+                <a href="./img/casas/cincofuegos_15.jpg" rel="myExMul-1">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_15_m.jpg" />
+                </a>
+                <a href="./img/casas/cincofuegos_16.jpg" rel="myExMul-1">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_16_m.jpg" />
+                </a>
+                <a href="./img/casas/cincofuegos_17.jpg" rel="myExMul-1">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_17_m.jpg" />
+                </a>
+                <a href="./img/casas/cincofuegos_18.jpg" rel="myExMul-1">
+                    <img alt="CINCO FUEGOS" src="./img/casas/cincofuegos_18_m.jpg" />
+                </a>
+
 
             </div>
+
+
         </div>
 
 
@@ -288,85 +255,32 @@
         </footer>
     </div>
 
-    <!-- PhotoSwipe layout -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-        <!-- Background of PhotoSwipe. 
-             It's a separate element, as animating opacity is faster than rgba(). -->
-        <div class="pswp__bg"></div>
-
-        <!-- Slides wrapper with overflow:hidden. -->
-        <div class="pswp__scroll-wrap">
-
-            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-            <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-            <div class="pswp__ui pswp__ui--hidden">
-
-                <div class="pswp__top-bar">
-
-                    <!--  Controls are self-explanatory. Order can be changed. -->
-
-                    <div class="pswp__counter"></div>
-
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                    <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-                    <!-- element will get class pswp__preloader--active when preloader is running -->
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div>
-
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                </button>
-
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                </button>
-
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    <!-- PhotoSwipe layout -->
-
-    
 
     <!-- JavaScripts -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
-    <script src="js/swiper/idangerous.swiper.min.js"></script>
-    <script src="js/isotope/jquery.isotope.min.js"></script>
-    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script>
-    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script>
+    <script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+    <script type="text/javascript" src="js/colorbox.js"></script>
+    <script type="text/javascript" src="js/jquery.justifiedGallery.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/ps.js"></script>
+    <script type="text/javascript">
+        $('.myExMul').justifiedGallery({
+            lastRow: 'nojustify',
+            rowHeight: 250,
+            maxRowHeight:250,
+            rel: 'gallery1', //replace with 'gallery1' the rel attribute of each link
+            margins: 10
+        }).on('jg.complete', function () {
+            $(this).find('a').colorbox({
+                maxWidth: '100%',
+                maxHeight: '100%',
+                opacity: 0.7,
+                transition: 'elastic',
+                current: ''
+            });
+        });
+    </script>
 
 </body>
 

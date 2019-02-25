@@ -30,15 +30,16 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <!-- VENDORS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Oswald:400" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.css" />
+    <link rel="stylesheet" href="css/justifiedGallery.min.css">
+    <link rel="stylesheet" href="css/colorbox.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css" />
 
 </head>
 
@@ -56,9 +57,9 @@
 
         <!-- Logo -->
         <header id="logo">
-            <a href="index.html"><img src="img/logo.png" alt=""></a>
-            <!-- <h1>Pacifica</h1>
-				<h2>Ezequiel Gil <strong>Arquitecto</strong></h2> -->
+            <a href="index.html">
+                <h1>Pacífica</h1>
+            </a>
         </header>
 
         <!-- Portfolio close button -->
@@ -103,120 +104,79 @@
     <!-- Main wrapper -->
     <div id="main-wrapper">
 
-        <!-- Content -->
-        <div id="content" class="isotope-container">
+        <!-- Fluid container -->
+        <div class="container">
 
-            <!-- Fluid container -->
-            <div class="container">
+            <!-- Page heading -->
 
-                <!-- Page heading -->
-
-                        <header id="heading">
-                            <h1>Lifestyle</h1>
-                            <h2></h2>
-                        </header>
+            <header id="heading">
+                <h1>Lifestyle</h1>
+                <h2></h2>
+            </header>
 
 
 
-                <!-- Main content -->
+            <!-- Main content -->
 
-                <div class="grid-gallery" itemscope>
+            <div class="lifestyle" itemscope>
 
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_01.jpg" data-size="600x300">
-                            <img src="./img/lifestyle/ls_01.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_02.jpg" data-size="600x900">
-                            <img src="./img/lifestyle/ls_02.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_03.jpg" data-size="600x600">
-                            <img src="./img/lifestyle/ls_03.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_04.jpg" data-size="600x600">
-                            <img src="./img/lifestyle/ls_04.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_05.jpg" data-size="600x300">
-                            <img src="./img/lifestyle/ls_05.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_06.jpg" data-size="600x600">
-                            <img src="./img/lifestyle/ls_06.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_07.jpg" data-size="600x600">
-                            <img src="./img/lifestyle/ls_07.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_08.jpg" data-size="600x300">
-                            <img src="./img/lifestyle/ls_08.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_09.jpg" data-size="600x600">
-                            <img src="./img/lifestyle/ls_09.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_10.jpg" data-size="600x600">
-                            <img src="./img/lifestyle/ls_10.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_11.jpg" data-size="600x900">
-                            <img src="./img/lifestyle/ls_11.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_12.jpg" data-size="600x300">
-                            <img src="./img/lifestyle/ls_12.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_13.jpg" data-size="600x900">
-                            <img src="./img/lifestyle/ls_13.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_14.jpg" data-size="600x600">
-                            <img src="./img/lifestyle/ls_14.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_15.jpg" data-size="600x300">
-                            <img src="./img/lifestyle/ls_15.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_16.jpg" data-size="600x300">
-                            <img src="./img/lifestyle/ls_16.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_17.jpg" data-size="600x300">
-                            <img src="./img/lifestyle/ls_17.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-                    <figure itemprop="associatedMedia" class="grid-gallery-item" itemscope>
-                        <a href="./img/lifestyle/ls_18.jpg" data-size="600x900">
-                            <img src="./img/lifestyle/ls_18.jpg" itempropo alt="">
-                        </a>
-                    </figure>
-
-                </div>
-
+                    <a href="./img/lifestyle/ls_01.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_01.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_02.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_02.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_03.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_03.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_04.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_04.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_05.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_05.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_06.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_06.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_07.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_07.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_08.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_08.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_09.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_09.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_10.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_10.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_11.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_11.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_12.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_12.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_13.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_13.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_14.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_14.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_15.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_15.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_16.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_16.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_17.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_17.jpg" >
+                    </a>
+                    <a href="./img/lifestyle/ls_18.jpg" rel="lifestyle-1">
+                        <img src="./img/lifestyle/ls_18.jpg" >
+                    </a>
 
             </div>
+
 
         </div>
         <footer class="footer-section">
@@ -304,84 +264,32 @@
 
 
     </div>
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+   
 
-        <!-- Background of PhotoSwipe. 
-         It's a separate element, as animating opacity is faster than rgba(). -->
-        <div class="pswp__bg"></div>
-
-        <!-- Slides wrapper with overflow:hidden. -->
-        <div class="pswp__scroll-wrap">
-
-            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-            <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-            <div class="pswp__ui pswp__ui--hidden">
-
-                <div class="pswp__top-bar">
-
-                    <!--  Controls are self-explanatory. Order can be changed. -->
-
-                    <div class="pswp__counter"></div>
-
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                    <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-                    <!-- element will get class pswp__preloader--active when preloader is running -->
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div>
-
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                </button>
-
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                </button>
-
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-
-    <!-- JavaScripts -->
-    <script type='text/javascript' src='js/jquery.min.js'></script>
-    <script type='text/javascript' src='js/bootstrap.min.js'></script>
-    <script type='text/javascript' src='js/masonry/masonry.pkgd.min.js'></script>
-    <script src="js/swiper/idangerous.swiper.min.js"></script>
-    <script src="js/isotope/jquery.isotope.min.js"></script>
-    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script>
-    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script>
-    <script type='text/javascript' src='js/custom.js'></script>
-    <script type='text/javascript' src='js/ps.js'></script>
+     <!-- JavaScripts -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+    <script type="text/javascript" src="js/colorbox.js"></script>
+    <script type="text/javascript" src="js/jquery.justifiedGallery.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/ps.js"></script>
+    <script type="text/javascript">
+        $('.lifestyle').justifiedGallery({
+            lastRow: 'nojustify',            
+            rowHeight: 250,
+            rel: 'gallery1', //replace with 'gallery1' the rel attribute of each link
+            margins: 10
+        }).on('jg.complete', function () {
+            $(this).find('a').colorbox({
+                maxWidth: '80%',
+                maxHeight: '80%',
+                opacity: 0.7,
+                transition: 'elastic',
+                current: ''
+            });
+        });
+    </script>
 
 
 
