@@ -300,8 +300,9 @@ address {
 
 #logo h1 {
   letter-spacing: 5px;
-  font-size: 26px;
+  font-size: 36px;
   color:white;
+  font-weight: 300;
 }
 
 #logo h2 {
@@ -355,7 +356,11 @@ address {
   top: 50%;
   margin-top: -10px;
 }
-
+@media only screen and (max-width:500px) {
+  #logo h1 {
+    font-size: 26px;
+  }
+}
 /*==========================================================*/
 /* Main wrapper
 /*==========================================================*/
@@ -943,6 +948,9 @@ article.portfolio .fadeIn-right {
 }
 
 @media screen and (max-width:600px) {
+  article.portfolio:hover .content-details {
+    top:inherit;
+  }
   article.portfolio .content-details h3 {
     font-size: 16px;
   }
