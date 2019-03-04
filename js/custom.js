@@ -220,3 +220,23 @@ jQuery(document).ready(function($) {
 
 
 });
+
+/*==========================================================*/
+/* Swiper slider
+/*==========================================================*/
+
+	$('.gallery').justifiedGallery({
+		lastRow: 'nojustify',
+		rowHeight: 250,
+		rel: 'gallery1', //replace with 'gallery1' the rel attribute of each link
+		margins: 10
+	}).on('jg.complete', function () {
+		$(this).find('a').colorbox({
+			maxWidth: '100%',
+			maxHeight: '100%',
+			opacity: 0.7,
+			transition: 'elastic',
+			current: ''
+		});
+	});
+
