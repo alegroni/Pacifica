@@ -30,14 +30,10 @@
     <meta name="theme-color" content="#ffffff" />
 
     <!-- VENDORS -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-
-    <link rel="stylesheet" href="css/idangerous.swiper.css" />
-    <link rel="stylesheet" href="css/justifiedGallery.min.css">
-    <link rel="stylesheet" href="css/colorbox.css">
-    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/extras.css">
+    
+	<!-- CUSTOM CSS -->
+	
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -106,7 +102,7 @@
 
             <!-- Main content -->            
 
-            <div class="myExMul">
+            <div class="gallery">
                 <a href="./img/casas/crystal_01.jpg" rel="myExMul-1">
                     <img alt="CRYSTAL" src="./img/casas/crystal_01_m.jpg" />
                 </a>
@@ -119,9 +115,7 @@
                 <a href="./img/casas/crystal_04.jpg" rel="myExMul-1">
                     <img alt="CRYSTAL" src="./img/casas/crystal_04_m.jpg" />
                 </a>
-                <a href="./img/casas/crystal_05.jpg" rel="myExMul-1">
-                    <img alt="CRYSTAL" src="./img/casas/crystal_05_m.jpg" />
-                </a>
+                
                 <a href="./img/casas/crystal_06.jpg" rel="myExMul-1">
                     <img alt="CRYSTAL" src="./img/casas/crystal_06_m.jpg" />
                 </a>
@@ -226,30 +220,11 @@
     </div>
 
 
-    <!-- JavaScripts -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
-    <script type="text/javascript" src="js/colorbox.js"></script>
-    <script type="text/javascript" src="js/jquery.justifiedGallery.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
-    <script type="text/javascript" src="js/ps.js"></script>
-    <script type="text/javascript">
-        $('.myExMul').justifiedGallery({
-            lastRow: 'nojustify',
-            rowHeight: 250,
-            rel: 'gallery1', //replace with 'gallery1' the rel attribute of each link
-            margins: 10
-        }).on('jg.complete', function () {
-            $(this).find('a').colorbox({
-                maxWidth: '100%',
-                maxHeight: '100%',
-                opacity: 0.7,
-                transition: 'elastic',
-                current: ''
-            });
-        });
-    </script>
+<!-- JavaScripts -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/extras.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+       
 
 </body>
 
