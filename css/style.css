@@ -650,6 +650,7 @@ address {
   letter-spacing: 5px;
   display: inline-block;
   color: #68666a;
+  font-weight: 300;
 }
 
 #heading h2 {
@@ -909,8 +910,7 @@ article.portfolio .content-details h3 {
   border-right: 3px solid white;
   padding-right: 10px;
   max-width: min-content;
-  /* position: absolute;
-  right: 60px; */
+  font-weight: 300;
   line-height: 1.2;
 }
 
