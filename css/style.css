@@ -41,6 +41,10 @@
 /*==========================================================*/
 /* Main Elements
 /*==========================================================*/
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
 html,
 body {
   margin: 0;
@@ -104,7 +108,7 @@ hr {
 /* Typography
 /*==========================================================*/
 body {
-  font-family: 'Lato', sans-serif!important;
+  font-family: 'Lato', sans-serif !important;
   color: #68666a;
   font-size: 16px;
   font-weight: 400;
@@ -119,8 +123,8 @@ h3,
 h4,
 h5,
 h6,
-.hfont {  
-  color: #68666a;  
+.hfont {
+  color: #68666a;
   line-height: 160%;
   margin: 0;
 }
@@ -301,7 +305,7 @@ address {
 #logo h1 {
   letter-spacing: 5px;
   font-size: 36px;
-  color:white;
+  color: white;
   font-weight: 300;
 }
 
@@ -356,11 +360,13 @@ address {
   top: 50%;
   margin-top: -10px;
 }
+
 @media only screen and (max-width:500px) {
   #logo h1 {
     font-size: 26px;
   }
 }
+
 /*==========================================================*/
 /* Main wrapper
 /*==========================================================*/
@@ -373,7 +379,7 @@ address {
   position: relative;
   overflow: hidden;
   overflow-y: scroll;
-  
+
 }
 
 
@@ -391,7 +397,7 @@ address {
   background-color: #e1e1e1;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
 }
@@ -465,7 +471,7 @@ address {
   top: 0px;
   left: 0;
   visibility: hidden;
-  width: 300px;  
+  width: 300px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   z-index: 1;
@@ -488,7 +494,7 @@ address {
   -webkit-transition-speed: 0.2s;
   transition-speed: 0.2s;
   top: 60px;
-  z-index:99999;
+  z-index: 99999;
 }
 
 #sidebar:after {
@@ -523,7 +529,7 @@ address {
 @media (max-width: 991px) {
   #sidebar {
     width: 100%;
-    
+
   }
 }
 
@@ -623,14 +629,14 @@ address {
   font-size: 12px;
   opacity: 0.5;
   padding: 0 40px;
-  color:white;
+  color: white;
 }
 
 /* Responsive */
 @media (max-width: 991px) {
   .copyright {
     text-align: center;
-    
+
   }
 }
 
@@ -742,8 +748,9 @@ address {
   #heading .icon-text {
     justify-content: flex-start
   }
+
   #heading {
-    margin-left:-6px;
+    margin-left: -6px;
   }
 }
 
@@ -949,8 +956,9 @@ article.portfolio .fadeIn-right {
 
 @media screen and (max-width:600px) {
   article.portfolio:hover .content-details {
-    top:inherit;
+    top: inherit;
   }
+
   article.portfolio .content-details h3 {
     font-size: 16px;
   }
@@ -1945,7 +1953,7 @@ input.half {
 iframe {
   margin-bottom: 0 !important;
   display: block;
-  box-shadow: 0px 1px 3px 0px #827b7b66!important;
+  box-shadow: 0px 1px 3px 0px #827b7b66 !important;
 }
 
 /*==========================================================*/
@@ -2316,8 +2324,9 @@ iframe {
   .container {
     padding: 80px;
   }
+
   .row {
-    margin:0;
+    margin: 0;
   }
 }
 
@@ -2349,7 +2358,7 @@ iframe {
 }
 
 .grid-gallery-item img {
-  width:340px;
+  width: 340px;
 }
 
 .grid-gallery-item-3 {
@@ -2418,12 +2427,15 @@ iframe {
 .portfolio-todos .inner {
   padding: 20px 0;
 }
+
 .portfolio-todos .inner h3 {
   text-transform: uppercase;
 }
+
 .team-card {
   box-shadow: 0px 1px 3px 0px #827b7b66;
 }
+
 .team-card .image {
   background-position: top center;
   padding-top: 100%;
@@ -2479,7 +2491,7 @@ iframe {
     background-position: center;
   }
 
- 
+
   .portfolio-todos .inner p {
     line-height: 1.4;
   }
@@ -2489,6 +2501,7 @@ iframe {
   .portfolio-todos .inner h3 {
     font-size: 22px;
   }
+
   .portfolio-todos .image {
     background-position: center;
     padding-top: 33%;
